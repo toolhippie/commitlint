@@ -1,6 +1,6 @@
 # commitlint
 
-[![Docker Build](https://github.com/toolhippie/commitlint/workflows/docker/badge.svg)](https://github.com/toolhippie/commitlint/actions?query=workflow%3Adocker) [![GitHub Repo](https://img.shields.io/badge/github-repo-yellowgreen)](https://github.com/toolhippie/commitlint) [![Upstream Repo](https://img.shields.io/badge/upstream-repo-yellow)](https://github.com/commitlint/commitlint)
+[![Docker Build](https://github.com/toolhippie/commitlint/workflows/docker/badge.svg)](https://github.com/toolhippie/commitlint/actions?query=workflow%3Adocker) [![GitHub Repo](https://img.shields.io/badge/github-repo-yellowgreen)](https://github.com/toolhippie/commitlint) [![Upstream Repo](https://img.shields.io/badge/upstream-repo-yellow)](https://github.com/conventional-changelog/commitlint)
 
 All these images are used for various scriptings, it's possible that any of
 these tools are updated randomly
