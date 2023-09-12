@@ -13,5 +13,5 @@ RUN apk update && \
   npm install --global \
     @commitlint/cli@${COMMITLINT_CLI_VERSION} \
     @commitlint/config-conventional@${COMMITLINT_CONFIG_VERSION} && \
-  echo 'module.exports = {extends: ['/usr/local/lib/node_modules/@commitlint/config-conventional']};' > /etc/commitlint.config.js && \
+  echo 'module.exports = {extends: ["/usr/local/lib/node_modules/@commitlint/config-conventional"]};' > /etc/commitlint.config.js && \
   rm -rf /var/cache/apk/*
