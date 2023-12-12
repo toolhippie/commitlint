@@ -49,7 +49,7 @@ jobs:
 
       - name: Setup QEMU
         id: qemu
-        uses: docker/setup-qemu-action@v3
+        run: sudo apt-get update && sudo apt-get install -y qemu-user-static
 
       - name: Setup Buildx
         id: buildx
@@ -87,7 +87,7 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           provenance: false
-          platforms: linux/amd64,linux/arm64,linux/arm/v6
+          platforms: linux/arm/v6
           push: ${{ github.event_name != 'pull_request' }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ steps.meta.outputs.tags }}

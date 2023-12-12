@@ -10,8 +10,9 @@ ENV COMMITLINT_CONFIG_VERSION=18.4.3
 RUN apk update && \
   apk upgrade && \
   apk add nodejs npm git && \
-  npm install --global \
+  rm -rf /var/cache/apk/*
+
+RUN npm install --global \
     @commitlint/cli@${COMMITLINT_CLI_VERSION} \
     @commitlint/config-conventional@${COMMITLINT_CONFIG_VERSION} && \
-  echo 'module.exports = {extends: ["/usr/local/lib/node_modules/@commitlint/config-conventional"]};' > /etc/commitlint.config.js && \
-  rm -rf /var/cache/apk/*
+    echo 'module.exports = {extends: ["/usr/local/lib/node_modules/@commitlint/config-conventional"]};' > /etc/commitlint.config.js
