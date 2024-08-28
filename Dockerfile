@@ -5,7 +5,7 @@ ENTRYPOINT [""]
 ENV COMMITLINT_CLI_VERSION=19.4.1
 
 # renovate: datasource=npm depName=@commitlint/config-conventional
-ENV COMMITLINT_CONFIG_VERSION=19.2.2
+ENV COMMITLINT_CONFIG_VERSION=19.4.1
 
 RUN apk update && \
   apk upgrade && \
