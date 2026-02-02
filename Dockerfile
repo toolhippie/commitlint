@@ -2,10 +2,10 @@ FROM ghcr.io/dockhippie/alpine:3.23@sha256:290fa97fc3c00802b2a80f40cc21cdd5e6534
 ENTRYPOINT [""]
 
 # renovate: datasource=npm depName=@commitlint/cli
-ENV COMMITLINT_CLI_VERSION=20.3.1
+ENV COMMITLINT_CLI_VERSION=20.4.0
 
 # renovate: datasource=npm depName=@commitlint/config-conventional
-ENV COMMITLINT_CONFIG_VERSION=20.3.1
+ENV COMMITLINT_CONFIG_VERSION=20.4.0
 
 RUN apk update && \
   apk upgrade && \
