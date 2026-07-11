@@ -2,7 +2,7 @@ FROM ghcr.io/dockhippie/alpine:3.23@sha256:1cb712df5842561657169b93b1845cffa82de
 ENTRYPOINT [""]
 
 # renovate: datasource=npm depName=@commitlint/cli
-ENV COMMITLINT_CLI_VERSION=21.2.0
+ENV COMMITLINT_CLI_VERSION=21.2.1
 
 # renovate: datasource=npm depName=@commitlint/config-conventional
 ENV COMMITLINT_CONFIG_VERSION=21.2.0
